@@ -2,7 +2,7 @@
   "name": "y",
   "version": "1.0.0",
   "description": "Facebook but for pets",
-  "author": "amiryamini <amir.yamini.416@my.csun.edu>",
+  "author": "amiryamini",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
