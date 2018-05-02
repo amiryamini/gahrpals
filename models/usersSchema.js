@@ -1,44 +1,20 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const usersSchema = new Schema({
-    first_name: {
-        type: String
-    },
-    last_name: {
-        type: String
-    },
-    age: {
-        type: int
-    },
-    date_of_birth: {
-        type: String
-    },
-    status: {
-        type: String
-    },
-    number_of_friends: {
-        type: int
-    },
-    posts: [{
-        status_5: {
-            type: String
-        },
-        status_4: {
-            type: String
-        },
-        status_3: {
-            type: String
-        },
-        status_2: {
-            type: String
-        },
-        status_1: {
-            type: String
-        }
-    }],
-   
+const PostSchema = new Schema({
+    content: String,
+    time: Date
 });
 
-const Users = mongoose.model('users', usersSchema);
+const UsersSchema = new Schema({
+    first_name: String,
+    last_name: String,
+    id: String,
+    date_of_birth: Date,
+    status: String,
+    friends: [String],
+    posts: [PostSchema]
+});
+
+const Users = mongoose.model('users', UsersSchema);
 module.exports = Users;
