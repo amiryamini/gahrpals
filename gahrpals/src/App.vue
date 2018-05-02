@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <!--For header/navbar-->
-    <page-header />
+    <!--&lt;!&ndash;For header/navbar&ndash;&gt;-->
+    <!--<page-header />-->
 
     <img src="./assets/logo.png">
     <HelloWorld/>
@@ -10,13 +10,13 @@
 
 <script>
 import HelloWorld from './components/HelloWorld'
-import PageHeader from '@/components/Header.vue'
+//import PageHeader from '@/components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    PageHeader
+    HelloWorld
+//    PageHeader
   }
 }
 </script>
