@@ -25,7 +25,11 @@
       <!--TODO: this info's gotta be saved somewhere-->
       <div class="form-group mt-4">
         <label for="formGroupExampleInput">Name</label>
-        <input type="email" class="form-control" id="formGroupExampleInput" aria-describedby="emailHelp" placeholder="Enter email">
+        <input type="text" class="form-control" id="formGroupExampleInput" aria-describedby="text" placeholder="Enter name">
+      </div>
+      <div class="form-group mt-4">
+        <label for="formGroupExampleDate">Birthday</label>
+        <input type="date" class="form-control" id="formGroupExampleDate" aria-describedby="date" placeholder="Enter birthday">
       </div>
       <div class="form-group mt-4">
         <label for="exampleInputEmail1">Email address</label>

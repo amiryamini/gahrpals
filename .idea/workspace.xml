@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf4fa010-b0f7-4b7d-ae58-f11bd27b14cb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gahrpals/src/components/Register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gahrpals/src/components/Register.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gahrpals/src/components/Login.vue" afterPath="$PROJECT_DIR$/gahrpals/src/components/Login.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gahrpals/src/components/Register.html" afterPath="$PROJECT_DIR$/gahrpals/src/components/Register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gahrpals/src/components/Register.vue" afterPath="$PROJECT_DIR$/gahrpals/src/components/Register.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/gahrpals/src/components/Register.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="72" column="2" lean-forward="true" selection-start-line="72" selection-start-column="2" selection-end-line="123" selection-end-column="8" />
+              <caret line="100" column="6" lean-forward="true" selection-start-line="100" selection-start-column="6" selection-end-line="103" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -117,8 +116,8 @@
       <file leaf-file-name="Register.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gahrpals/src/components/Register.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1144">
-              <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+            <state relative-caret-position="264">
+              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -270,12 +269,12 @@
       <option name="presentableId" value="Default" />
       <updated>1525296040128</updated>
       <workItem from="1525296041428" duration="1750000" />
-      <workItem from="1525299619278" duration="9434000" />
+      <workItem from="1525299619278" duration="9802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11184000" />
+    <option name="totallyTimeSpent" value="11552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -427,7 +426,7 @@
     <entry file="file://$PROJECT_DIR$/gahrpals/src/components/Register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="72" column="2" lean-forward="true" selection-start-line="72" selection-start-column="2" selection-end-line="123" selection-end-column="8" />
+          <caret line="100" column="6" lean-forward="true" selection-start-line="100" selection-start-column="6" selection-end-line="103" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -436,8 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gahrpals/src/components/Register.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+        <state relative-caret-position="264">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
