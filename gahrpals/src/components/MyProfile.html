@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!--Bootstrap CDN, JS, Popper.js, and jQuery-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+  <title>Garhpals</title>
+
+</head>
+
+
+
+<body>
+<!--Bootstrap scripts-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+
+<nav class="navbar navbar-toggleable-sm py-2 navbar-inverse bg-primary col-xs-12">
+  <div class="container ">
+
+    <!--Navbar logo-->
+    <div class="nav__logo col-sm-offset-1 hidden-xs-down home">
+      <a class="navbar-brand" href="#">Garhpals</a>
+    </div>
+
+    <!--Collapse icon-->
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--logo when menu collapses-->
+    <div class=" hidden-sm-up">
+        <span class="mobileLogo navbar-brand">
+          <a class="navbar-brand" href="#"></a>
+        </span>
+    </div>
+
+    <!--Navbar links-->
+    <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Profile</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Friends</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Log out</a>
+        </li>
+      </ul>
+    </div>
+    <!--end div container-->
+  </div>
+</nav>
+
+
+
+
+<!--actual My Profile page-->
+<!--Contains the profile image, name, birthday, and status of the user logged in.-->
+<section>
+  <div class="topInfo mx-auto pt-4 text-center">
+
+    <div class="myProfile__icon ">
+      <!--TODO: image goes here-->
+      <img src="../assets/logo.png" alt="">
+    </div>
+
+    <div class="myProfile__name">
+        <!--TODO: name goes here-->
+      <h3 class="">NAME HERE</h3>
+    </div>
+
+    <div class="myProfile__birthday">
+      <!--TODO: birth date goes here-->
+      <h5 class="text-muted">January 1, 2017</h5>
+    </div>
+
+    <div class="myProfile__status">
+      <div class="__statusText col-md-4 mx-auto mt-3">
+        <!--TODO: status of the logged-in user goes here-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda atque culpa dolor ducimus, earum et illum minima molestiae nisi odit perspiciatis quae quia repellat saepe totam unde velit voluptate.</p>
+      </div>
+
+      <div class="__updateButton">
+        <!--TODO: update status functionality goes here-->
+        <button class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+<!--end div topInfo-->
+</section>
+
+
+
+<!--div for friends module-->
+<section>
+  <div class="card  " style="width: 18rem;">
+    <div class="card-body col-sm-12">
+      <!--TODO: link to Friends page goes here-->
+      <a href="#"><h4 class="card-title">Friends
+        <!--TODO: OPTIONAL. number of friends a person has goes here, in "span" tag.
+            If we're not gonna include number of friends, then no need to do anything here.-->
+        <span></span></h4></a>
+
+
+
+
+    </div>
+  </div>
+
+</section>
+
+
+</body>
+
+
+
+
+<!-- Added "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+  .topInfo  {
+    background-color: #c2dbff;
+    padding-bottom: 20px;
+  }
+
+</style>
