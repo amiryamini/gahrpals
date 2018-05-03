@@ -40,8 +40,7 @@
 
 
 
-<!-- Added "scoped" attribute to limit CSS to this component only -->
-<!-- Added "scoped" attribute to limit CSS to this component only -->
+<!-- Added "scoped" attribute to limit CSS to this component only --><!-- Added "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   section .container {
     background-color: #fff;
