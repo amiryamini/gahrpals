@@ -1,5 +1,5 @@
 <template>
-  <!--actual My Profile page-->
+  <!--actual Friend's Profile page-->
   <!--Contains the profile image, name, birthday, and status of the user logged in.-->
   <section>
     <div class="topInfo mx-auto pt-4 text-center">
@@ -69,8 +69,10 @@
                   </div>
 
                   <div class="__name mx-auto">
-                    <!--TODO: friend's name-->
-                    <h5 class="text-center">John Smith</h5>
+                    <!--TODO: friend's name, and link to said friend-->
+                    <a href="#">
+                      <h5 class="text-center">John Smith</h5>
+                    </a>
                   </div>
                 </div>
 
@@ -83,8 +85,10 @@
                   </div>
 
                   <div class="__name mx-auto">
-                    <!--TODO: friend's name-->
-                    <h5 class="text-center">John Smith</h5>
+                    <!--TODO: friend's name, and link to said friend-->
+                    <a href="#">
+                      <h5 class="text-center">John Smith</h5>
+                    </a>
                   </div>
                 </div>
 
@@ -97,8 +101,10 @@
                   </div>
 
                   <div class="__name mx-auto">
-                    <!--TODO: friend's name-->
-                    <h5 class="text-center">John Smith</h5>
+                    <!--TODO: friend's name, and link to said friend-->
+                    <a href="#">
+                      <h5 class="text-center">John Smith</h5>
+                    </a>
                   </div>
                 </div>
 
@@ -111,8 +117,10 @@
                   </div>
 
                   <div class="__name mx-auto">
-                    <!--TODO: friend's name-->
-                    <h5 class="text-center">John Smith</h5>
+                    <!--TODO: friend's name, and link to said friend-->
+                    <a href="#">
+                      <h5 class="text-center">John Smith</h5>
+                    </a>
                   </div>
                 </div>
 
@@ -125,8 +133,10 @@
                   </div>
 
                   <div class="__name mx-auto">
-                    <!--TODO: friend's name-->
-                    <h5 class="text-center">John Smith</h5>
+                    <!--TODO: friend's name, and link to said friend-->
+                    <a href="#">
+                      <h5 class="text-center">John Smith</h5>
+                    </a>
                   </div>
                 </div>
 

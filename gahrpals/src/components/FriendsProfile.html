@@ -69,8 +69,16 @@
 
 
 
-<!--actual Friend's Profile page-->
-<!--Contains the profile image, name, birthday, and status of the user logged in.-->
+<!-- NOTE:
+     You can toggle visibility on a friend's profile component by adding "invisible" to the class attribute.
+     A component can be visible when "visible" is added to the class attribute instead.
+-->
+
+
+
+
+<!--actual My Profile page-->
+<!--Contains the profile image, name, birthday, and status of the user.-->
 <section>
   <div class="topInfo mx-auto pt-4 text-center">
 
@@ -80,8 +88,8 @@
     </div>
 
     <div class="myProfile__name">
-        <!--TODO: name goes here-->
-      <h3 class="">NAME HERE</h3>
+      <!--TODO: name goes here-->
+      <h3 class="">Yogurt Soda</h3>
     </div>
 
     <div class="myProfile__birthday">
@@ -95,13 +103,9 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda atque culpa dolor ducimus, earum et illum minima molestiae nisi odit perspiciatis quae quia repellat saepe totam unde velit voluptate.</p>
       </div>
 
-      <div class="__updateButton">
-        <!--TODO: update status functionality goes here-->
-        <button class="btn btn-primary">Update</button>
-      </div>
     </div>
   </div>
-<!--end div topInfo-->
+  <!--end div topInfo-->
 </section>
 
 
@@ -220,33 +224,12 @@
 
 
 
-      <!--posts card (for adding a new post, and viewing past posts-->
+      <!--posts card (for viewing posts-->
       <div class="col-md posts mx-3 my-3 ">
 
-        <!--add a new post-->
-        <div class="addPost">
-          <div class="card px-3 pt-3 pb-2" >
-            <div class="card-body">
-
-              <div class="form-group">
-                <div class="float-left">
-                  <label for="exampleFormControlTextarea1"><strong>Post something new</strong></label>
-                </div>
-                <div class="float-right mb-2">
-                  <button class="btn btn-primary" type="submit">Post</button>
-                </div>
-
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Say something..."></textarea>
-              </div>
-            </div>
-          <!--end div card-->
-          </div>
-        <!--end div addPost-->
-        </div>
 
 
-
-        <!--look at your past posts-->
+        <!--look at past posts-->
         <div class="pastPosts mt-5">
 
           <h3>Posts</h3>
@@ -257,10 +240,10 @@
           <div class="card px-3 pt-3 pb-2 mt-4" >
             <div class="card-body">
 
-                <!--TODO: OP's icon image here-->
-                <div class="__icon float-left mr-3 " style="width: 50px; height: 50px; background-color: black;">
-                  <img src="../assets/logo.png" alt="" width="50" height="50">
-                </div>
+              <!--TODO: OP's icon image here-->
+              <div class="__icon float-left mr-3 " style="width: 50px; height: 50px; background-color: black;">
+                <img src="../assets/logo.png" alt="" width="50" height="50">
+              </div>
 
               <div class="row">
                 <div class="__name col mb-2">
@@ -268,14 +251,10 @@
                   <h5 class="float-left">John Smith</h5>
                 </div>
 
-                <div class="__deleteButton mb-2 col">
-                  <!--TODO: delete post functionality here-->
-                  <button class="btn btn-outline-info float-right" type="button">delete</button>
-                </div>
               </div>
 
-                <!--TODO: past post's text here-->
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem culpa dignissimos distinctio dolorem exercitationem nihil omnis reiciendis rerum voluptatum! Aliquam aspernatur commodi cum eaque eius expedita magnam magni unde.</p>
+              <!--TODO: past post's text here-->
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem culpa dignissimos distinctio dolorem exercitationem nihil omnis reiciendis rerum voluptatum! Aliquam aspernatur commodi cum eaque eius expedita magnam magni unde.</p>
             </div>
             <!--end div card; a single past post-->
           </div>
@@ -297,10 +276,6 @@
                   <h5 class="float-left">John Smith</h5>
                 </div>
 
-                <div class="__deleteButton mb-2 col">
-                  <!--TODO: delete post functionality here-->
-                  <button class="btn btn-outline-info float-right" type="button">delete</button>
-                </div>
               </div>
 
               <!--TODO: past post's text here-->
@@ -325,10 +300,6 @@
                   <h5 class="float-left">John Smith</h5>
                 </div>
 
-                <div class="__deleteButton mb-2 col">
-                  <!--TODO: delete post functionality here-->
-                  <button class="btn btn-outline-info float-right" type="button">delete</button>
-                </div>
               </div>
 
               <!--TODO: past post's text here-->
@@ -336,8 +307,6 @@
             </div>
             <!--end div card; a single past post-->
           </div>
-
-
 
           <!--end div pastPosts-->
         </div>
@@ -346,11 +315,11 @@
 
 
 
-      <!--end div for posts (both adding poss and past posts)-->
+        <!--end div for posts (past posts)-->
       </div>
-    <!--end div row for container-->
+      <!--end div row for container-->
     </div>
-  <!--end div container-->
+    <!--end div container-->
   </div>
 </section>
 
