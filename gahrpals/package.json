@@ -1,8 +1,8 @@
 {
-  "name": "y",
+  "name": "gahrpals",
   "version": "1.0.0",
-  "description": "Facebook but for pets",
-  "author": "amiryamini",
+  "description": "A Vue.js project",
+  "author": "amiryamini <amir.yamini.416@my.csun.edu>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -10,7 +10,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "vue": "^2.5.2"
+    "mongo": "^0.1.0",
+    "mongodb": "^3.0.7",
+    "socket.io": "^2.1.0",
+    "vue": "^2.5.2",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

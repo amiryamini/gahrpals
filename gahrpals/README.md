@@ -1,6 +1,6 @@
-# y
+# gahrpals
 
-> Facebook but for pets
+> A Vue.js project
 
 ## Build Setup
 
