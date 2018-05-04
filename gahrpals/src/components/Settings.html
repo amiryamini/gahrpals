@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!--Bootstrap CDN, JS, Popper.js, and jQuery-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+  <title>Garhpals</title>
+
+</head>
+
+
+
+<body>
+<!--Bootstrap scripts-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+
+<nav class="navbar navbar-toggleable-sm py-2 navbar-inverse bg-primary col-xs-12">
+  <div class="container ">
+
+    <!--Navbar logo-->
+    <div class="nav__logo col-sm-offset-1 hidden-xs-down home">
+      <a class="navbar-brand" href="#">Garhpals</a>
+    </div>
+
+    <!--Collapse icon-->
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--logo when menu collapses-->
+    <div class=" hidden-sm-up">
+        <span class="mobileLogo navbar-brand">
+          <a class="navbar-brand" href="#"></a>
+        </span>
+    </div>
+
+    <!--Navbar links-->
+    <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Profile</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Friends</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Log out</a>
+        </li>
+      </ul>
+    </div>
+    <!--end div container-->
+  </div>
+</nav>
+
+
+
+
+
+<div class="pageTitle text-center mx-auto mt-5">
+  <h4>Settings</h4>
+</div>
+
+<!--section for profile image upload/reset-->
+<section>
+  <div class="profileImage pt-4 col-xs mx-auto text-center">
+
+    <div class="__icon">
+      <!--TODO: image goes here-->
+      <img src="../assets/logo.png" alt="">
+    </div>
+
+      <div class="btn-group-vertical">
+        <!--TODO: upload photo functionality goes here-->
+        <button class="btn btn-primary">Upload photo</button>
+
+        <!--TODO: reset photo functionality goes here-->
+        <button class="btn btn-outline-primary mt-1">Reset photo</button>
+      </div>
+  <!--end div profileImage-->
+  </div>
+</section>
+
+
+
+<!--section for input fields-->
+<section class="container float-center">
+  <!--TODO: update the user's info -->
+  <div class="row mx-auto float-center my-5">
+    <div class="col-xs col-md-4 col-md-offset-2 mx-5">
+
+      <div class="form-group mt-4 ">
+        <label for="formGroupExampleInput">Name</label>
+        <input type="email" class="form-control" id="formGroupExampleInput" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+
+      <div class="form-group mt-4 ">
+        <label for="formGroupExampleDate">Birthday</label>
+        <input type="date" class="form-control" id="formGroupExampleDate" aria-describedby="date" placeholder="Enter birthday">
+      </div>
+
+      <div class="form-group mt-4 ">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+    </div>
+
+
+
+    <div class="col-xs col-md-4 float-left mx-5 ">
+
+      <div class="form-group mt-4 ">
+        <label for="exampleInputPassword">New password</label>
+        <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+      </div>
+
+      <div class="form-group mt-4 ">
+        <label for="exampleInputPassword1">Current password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+
+      <div class="form-group mt-4 ">
+        <label for="exampleInputPassword2">Confirm password</label>
+        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+      </div>
+
+    </div>
+  </div>
+<!--end section for updating input fields-->
+</section>
+
+
+
+
+<!--section for checkboxes; items that will be visible to other users-->
+<!--TODO: checkbox functionality for profile components' visibility-->
+<section>
+  <div class="container mx-auto">
+
+    <h5 class="ml-5">Show these on my profile:</h5>
+
+    <div class="row mx-auto">
+      <div class="col-sm mt-3 ml-5">
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <div class="input-group-text mr-3">
+
+              <!--TODO: checkbox functionality-->
+              <input type="checkbox" aria-label="Checkbox for following text input">
+
+            </div>
+          </div>
+          <p>Date of birth</p>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <div class="input-group-text mr-3">
+
+              <!--TODO: checkbox functionality-->
+              <input type="checkbox" aria-label="Checkbox for following text input">
+
+            </div>
+          </div>
+          <p>Status</p>
+        </div>
+
+      </div>
+
+
+
+      <div class="col-sm mt-3 ml-5">
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <div class="input-group-text mr-3">
+
+              <!--TODO: checkbox functionality-->
+              <input type="checkbox" aria-label="Checkbox for following text input">
+
+            </div>
+          </div>
+          <p>Friends</p>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <div class="input-group-text mr-3">
+
+              <!--TODO: checkbox functionality-->
+              <input type="checkbox" aria-label="Checkbox for following text input">
+
+            </div>
+          </div>
+          <p>Posts</p>
+        </div>
+
+      <!--end div for col-->
+      </div>
+    <!--end div for row-->
+    </div>
+  <!--end div for container for all checkbox stuff-->
+  </div>
+<!--end section for checkboxes-->
+</section>
+
+
+
+<!--TODO: optional; save updated settings when you click the Save settings button-->
+<div class="saveButton mx-auto text-center my-5 ">
+  <button type="button" class="btn btn-primary btn-lg">Save settings</button>
+</div>
+
+
+
+</body>
+
+
+
+
+<!-- Added "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+
+
+</style>
