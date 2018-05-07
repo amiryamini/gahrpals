@@ -14,7 +14,15 @@
     "mongodb": "^3.0.7",
     "socket.io": "^2.1.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "express":"*",
+    "mongoose":"*",
+    "bcryptjs":"*",
+    "cors":"*",
+    "jsonwebtoken": "*",
+    "body-parser":"*",
+    "passport":"*",
+    "passport-jwt":"*"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
