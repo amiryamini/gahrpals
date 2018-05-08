@@ -3,17 +3,17 @@ const router = express.Router();
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
 
-const User = require('../models/user');
+const Friend = require('../models/friend');
 
 //Adding Friends
-router.post('/friends', (req, res, next) => {
-    //res.send('FRIENDS');
+router.post('/add', (req, res, next) => {
+    //res.send('ADD');
     let newFriend = new Friend({
         first_name: req.body.first_name,
         last_name: req.body.last_name
     });
 
-    User.addUser(newFriend, (err, user) => {
+    Friend.addUser(newFriend, (err, user) => {
         if(err){
             res.json({success: false, msg:'Failed to add friend.'});
         } else {
