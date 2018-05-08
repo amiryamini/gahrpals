@@ -35,6 +35,11 @@
 <!--scripts for stuff-->
 <script>
 export default {
+    methods: {
+        navigateTo(route) {
+            router.push(route)
+        },
+    },
   name: 'Login'
 }
 </script>
