@@ -1,4 +1,5 @@
 <template>
+  <div>
   <nav class="navbar navbar-toggleable-sm py-2 navbar-inverse bg-primary col-xs-12">
     <div class="container ">
 
@@ -40,6 +41,7 @@
       <!--end div container-->
     </div>
   </nav>
+</div>
 
 </template>
 
@@ -47,7 +49,9 @@
 
 <!--scripts for stuff-->
 <script>
-
+export default {
+  name: 'Header'
+}
 </script>
 
 
