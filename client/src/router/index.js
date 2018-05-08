@@ -11,19 +11,19 @@ export default new Router({
 	mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'Register',
-      component: Register
+        path: '/',
+        name: 'Register',
+        component: Register
     },
     {
-    	path: '/login',
-    	name: 'Login',
-    	component: Login
+        path: '/login',
+        name: 'Login',
+        component: Login
     },
     {
-    	path: '/settings',
-    	name: 'Settings',
-    	component: Settings
+        path: '/settings',
+        name: 'Settings',
+        component: Settings
     }
   ]
 })
