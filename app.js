@@ -50,7 +50,7 @@ app.listen(port, () => {
 });
 
 // Connect to mongo
-mongo.connect('mongodb://127.0.0.1/gahrpals', function(err, client){
+mongoose.connect('mongodb://127.0.0.1/gahrpals', function(err, client){
     if(err){
         throw err;
     }
