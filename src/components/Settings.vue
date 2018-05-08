@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="pageTitle text-center mx-auto mt-5">
     <h4>Settings</h4>
   </div>
@@ -153,14 +154,16 @@
   <div class="saveButton mx-auto text-center my-5 ">
     <button type="button" class="btn btn-primary btn-lg">Save settings</button>
   </div>
-  
+  </div>
 </template>
 
 
 
 <!--scripts for stuff-->
 <script>
-
+export default {
+  name: 'Settings'
+}
 </script>
 
 

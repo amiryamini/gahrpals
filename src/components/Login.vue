@@ -22,7 +22,7 @@
         <button type="submit" class="btn btn-primary mt-4">Log in</button>
 
         <!--TODO: link to Register page-->
-        <h5 class="text-center mt-4">New member? <a href="#">Register</a></h5>
+        <h5 class="text-center mt-4">New member? <router-link to='/'>Register</router-link></h5>
 
       </form>
       <!--end div container-->
@@ -34,7 +34,9 @@
 
 <!--scripts for stuff-->
 <script>
-
+export default {
+  name: 'Login'
+}
 </script>
 
 

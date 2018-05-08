@@ -4,21 +4,7 @@
 
     <form class="mx-auto col-xs-12 col-sm-10 col-md-5">
       <div class="register__header">
-        <h5 class="text-center">Register</h5>
-      </div>
-
-
-
-      <div class="register__photo mt-4">
-        <div class="card mx-auto text-center" style="width: 18rem;">
-
-          <!--TODO: upload image function-->
-          <div class="form-group mx-auto">
-            <label for="exampleFormControlFile1">Upload a photo</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-          </div>
-
-        </div>
+        <h1 class="text-center">Register</h1>
       </div>
 
 
@@ -50,7 +36,7 @@
 
 
       <!--TODO: link to Register page-->
-      <h5 class="text-center mt-4">Already a member? <a href="#">Log in</a></h5>
+      <h5 class="text-center mt-4">Already a member? <router-link to='/login'>Log in</router-link></h5>
 
     </form>
     <!--end div container-->
