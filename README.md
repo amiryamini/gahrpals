@@ -1,5 +1,5 @@
-# Gahrpals
-> Created by April Lima, Samir Matin, Hamoun Mojib, and Amir Yamini
+# Garhpals
+> Created by Samir Matin, Hamoun Mojib, Amir Yamini, and April Lima
 
 ## Initialization
 This project requires Node.js, which can be [downloaded here](https://nodejs.org/en/).
@@ -12,4 +12,11 @@ npm install -g @vue/cli
 ``` sh
 npm install
 npm run serve
+```
+
+## Run Server
+``` sh
+npm install
+mongod
+node app
 ```
