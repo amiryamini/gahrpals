@@ -1,22 +1,16 @@
 <template>
   <div id="app">
-    <!--For header/navbar-->
-    <!--<page-header />-->
-
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <Register/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-//import PageHeader from '@/components/Header.vue'
+import Register from './components/Register'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-//    PageHeader
+    Register
   }
 }
 </script>
