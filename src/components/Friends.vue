@@ -1,6 +1,7 @@
 <template>
   <!--Friends section of the page-->
   <section class="">
+    <Header/>
     <div class="card mx-4 my-4 px-4 py-4">
       <div class="card-body ">
         <h5 class="card-title">Friends</h5>
@@ -96,7 +97,14 @@
 
 
 <script>
+import Header from '@/components/Header'
 
+export default {
+  name: 'Friends',
+  components: {
+    Header
+  }
+}
 </script>
 
 

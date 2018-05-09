@@ -6,7 +6,10 @@
       <!--Navbar logo-->
       <div class="nav__logo col-sm-offset-1 hidden-xs-down home">
         <!--TODO: link to My Profile page-->
-        <a class="navbar-brand"  v-on:click="navigateTo({name: 'MyProfile'})">Garhpals</a>
+        <router-link class="navbar-brand" to='/myprofile'>Gahrpals</router-link>
+        <router-link to='/friends'>Friends</router-link>
+        <router-link to='/settings'>Settings</router-link>
+        <router-link to='/login'>Log Out</router-link>
       </div>
 
       <!--Collapse icon-->
@@ -19,7 +22,7 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <!--TODO: link tp My Profile page-->
-            <a class="nav-link"  v-on:click="navigateTo({name: 'MyProfile'})">My Profile</a>
+            <router-link to='/myprofile'>My Profile</router-link>
           </li>
 
           <li class="nav-item">
@@ -50,11 +53,6 @@
 <!--scripts for stuff-->
 <script>
 export default {
-    methods: {
-        navigateTo(route) {
-            router.push(route)
-        },
-    },
   name: 'Header'
 }
 </script>

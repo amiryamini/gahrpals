@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header/>
   <!--actual My Profile page-->
   <!--Contains the profile image, name, birthday, and status of the user logged in.-->
   <section>
@@ -281,7 +282,14 @@
 
 <!--scripts for stuff-->
 <script>
+import Header from '@/components/Header'
 
+export default {
+  name: 'MyProfile',
+  components: {
+    Header
+  }
+}
 </script>
 
 

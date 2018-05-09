@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header/>
   <div class="pageTitle text-center mx-auto mt-5">
     <h4>Settings</h4>
   </div>
@@ -161,8 +162,13 @@
 
 <!--scripts for stuff-->
 <script>
+import Header from '@/components/Header'
+
 export default {
-  name: 'Settings'
+  name: 'Settings',
+  components: {
+    Header
+  }
 }
 </script>
 
