@@ -3,24 +3,47 @@ const router = express.Router();
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
 
-const User = require('../models/user');
+const Schema = require('../models/user');
 
 //Register
 router.post('/register', (req, res, next) => {
     //res.send('REGISTER');
-    let newUser = new User({
+    let newUser = new Schema.User({
         first_name: req.body.first_name,
         last_name: req.body.last_name,
         dob: req.body.dob,
         email: req.body.email,
-        password: req.body.password
+        password: req.body.password,
+        friends: req.body.friends,
+        privacy: req.body.privacy
     });
 
-    User.addUser(newUser, (err, user) => {
+    Schema.addUser(newUser, (err, user) => {
         if(err){
             res.json({success: false, msg:'Failed to register user.'});
         } else {
             res.json({success: true, msg:'User registered.'});
+        }
+    });
+});
+
+//Adding Friend
+router.post('/friends', (req, res, next) => {
+    //res.send('REGISTER');
+    let newFriend = new Schema.Friend({
+        userId: req.body.userId,
+        friendId: req.body.friendId
+        // userFirstName: req.body.userFirstName,
+        // userLastName: req.body.userLastName,
+        // friendFirstName: req.body.friendFirstName,
+        // friendLastName: req.body.friendLastName
+    });
+
+    Schema.addFriend(newFriend, (err, friend) => {
+        if(err) {
+            res.json({success: false, msg:'Failed to add a new friend.'});
+        } else {
+            res.json({success: true, msg:'You have a new friend!'});
         }
     });
 });
