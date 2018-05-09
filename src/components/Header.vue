@@ -7,6 +7,7 @@
       <div class="nav__logo col-sm-offset-1 hidden-xs-down home">
         <!--TODO: link to My Profile page-->
         <router-link class="navbar-brand" to='/myprofile'>Gahrpals</router-link>
+        <router-link to='/myprofile'>My Profile</router-link>
         <router-link to='/friends'>Friends</router-link>
         <router-link to='/settings'>Settings</router-link>
         <router-link to='/login'>Log Out</router-link>
