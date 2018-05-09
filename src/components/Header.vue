@@ -6,7 +6,7 @@
       <!--Navbar logo-->
       <div class="nav__logo col-sm-offset-1 hidden-xs-down home">
         <!--TODO: link to My Profile page-->
-        <a class="navbar-brand" href="#">Garhpals</a>
+        <a class="navbar-brand"  v-on:click="navigateTo({name: 'MyProfile'})">Garhpals</a>
       </div>
 
       <!--Collapse icon-->
@@ -19,22 +19,22 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <!--TODO: link tp My Profile page-->
-            <a class="nav-link" href="#">My Profile</a>
+            <a class="nav-link"  v-on:click="navigateTo({name: 'MyProfile'})">My Profile</a>
           </li>
 
           <li class="nav-item">
             <!--TODO: link to Friends page-->
-            <a class="nav-link" href="#">Friends</a>
+            <a class="nav-link"  v-on:click="navigateTo({name: 'Friends'})">Friends</a>
           </li>
 
           <li class="nav-item">
             <!--TODO: link to Settings page-->
-            <a class="nav-link" href="#">Settings</a>
+            <a class="nav-link"  v-on:click="navigateTo({name: 'Settings'})">Settings</a>
           </li>
 
           <li class="nav-item">
             <!--TODO: link to Log Out page; log out the user-->
-            <a class="nav-link" href="#">Log out</a>
+            <a class="nav-link"  v-on:click="navigateTo({name: 'root'})">Log out</a>
           </li>
         </ul>
       </div>
@@ -50,6 +50,11 @@
 <!--scripts for stuff-->
 <script>
 export default {
+    methods: {
+        navigateTo(route) {
+            router.push(route)
+        },
+    },
   name: 'Header'
 }
 </script>
