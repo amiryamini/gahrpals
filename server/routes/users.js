@@ -10,11 +10,11 @@ router.get('/', function (req, res, next) {
 */
 
 //POST route for updating data
-router.post('/', function (req, res, next) {
+router.post('/register', function (req, res, next) {
     let first_name = req.body.first_name;
     let password = req.body.password;
     console.log("post received: %s %s", first_name, password);
-
+    /*
     // confirm that user typed same password twice
     if (req.body.password !== req.body.password_duplicate) {
         const err = new Error('Passwords do not match.');
@@ -37,12 +37,11 @@ router.post('/', function (req, res, next) {
             password_duplicate: req.body.password_duplicate,
         };
 
-        User.create(userData, function (error, user) {
-            if (error) {
-                return next(error);
+        User.addUser(userData, (err, user) => {
+            if(err){
+                res.json({success: false, msg:'Failed to register user.'});
             } else {
-                req.session.userId = user._id;
-                return res.redirect('/profile');
+                res.json({success: true, msg:'User registered.'});
             }
         });
 
@@ -62,6 +61,7 @@ router.post('/', function (req, res, next) {
         err.status = 400;
         return next(err);
     }
+    */
 });
 
 // GET route after registering
