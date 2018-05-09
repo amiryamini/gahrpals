@@ -2,19 +2,8 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/users');
 
-/*
-// GET route for reading data UPDATE
-router.get('/', function (req, res, next) {
-    return res.sendFile(path.join(__dirname + '/templateLogReg/index.html'));
-});
-*/
-
 //POST route for updating data
 router.post('/register', function (req, res, next) {
-    let first_name = req.body.first_name;
-    let password = req.body.password;
-    console.log("post received: %s %s", first_name, password);
-    /*
     // confirm that user typed same password twice
     if (req.body.password !== req.body.password_duplicate) {
         const err = new Error('Passwords do not match.');
@@ -37,15 +26,18 @@ router.post('/register', function (req, res, next) {
             password_duplicate: req.body.password_duplicate,
         };
 
-        User.addUser(userData, (err, user) => {
-            if(err){
-                res.json({success: false, msg:'Failed to register user.'});
+        console.log(userData);
+        User.addUser(userData, function (error, user) {
+            if (error) {
+                return next(error);
             } else {
-                res.json({success: true, msg:'User registered.'});
+                console.log(user.password);
+                req.session.userId = user._id;
+                return res.send(user);
             }
         });
 
-    } else if (req.body.logemail && req.body.logpassword) {
+    } /*else if (req.body.logemail && req.body.logpassword) {
         User.authenticate(req.body.logemail, req.body.logpassword, function (error, user) {
             if (error || !user) {
                 const err = new Error('Wrong email or password.');
@@ -56,16 +48,15 @@ router.post('/register', function (req, res, next) {
                 return res.redirect('/profile');
             }
         });
-    } else {
+    }*/ else {
         const err = new Error('All fields required.');
         err.status = 400;
         return next(err);
     }
-    */
 });
 
 // GET route after registering
-router.get('/profile', function (req, res, next) {
+router.get('http://localhost:8080/settings', function (req, res, next) {
     User.findById(req.session.userId)
         .exec(function (error, user) {
             if (error) {
@@ -77,7 +68,9 @@ router.get('/profile', function (req, res, next) {
                     return next(err);
                 } else {
                     //UPDATE
-                    return res.send('<h1>Name: </h1>' + user.username + '<h2>Mail: </h2>' + user.email + '<br><a type="button" href="/logout">Logout</a>')
+                    console.log("in router");
+                    return res.send("Send from router");
+                    //return res.send('<h1>Name: </h1>' + user.username + '<h2>Mail: </h2>' + user.email + '<br><a type="button" href="/logout">Logout</a>')
                 }
             }
         });

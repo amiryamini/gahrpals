@@ -2,7 +2,7 @@
   <!--container will hold the login form stuff-->
   <div class="container mt-4">
 
-    <form action ="/users/register" method="post" class="mx-auto col-xs-12 col-sm-10 col-md-5">
+    <form class="mx-auto col-xs-12 col-sm-10 col-md-5">
       <div class="register__header">
         <h5 class="text-center">Register</h5>
       </div>
@@ -48,6 +48,7 @@
 
 <!--scripts for stuff-->
 <script>
+
     export default {
         data(){
             return{
@@ -65,6 +66,7 @@
             post: function(){
               this.$http.post('http://localhost:3000/users/register', this.register).then(function(data){
                   console.log(data);
+                  this.$router.push({ name: 'Settings', params: { userId: 123 }})
                   this.submitted = true;
               })
             }

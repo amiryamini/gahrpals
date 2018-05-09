@@ -8,13 +8,29 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
+
+const mongo = require('mongodb').MongomainmainClient;
+const mainClient = require('socket.io').listen(4000).sockets;
+//For login auth
+const path = require('path');
+const passport = require('passport');
+const mongoose = require('mongoose');
+
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
-
-const mongoUtil = require('./mongoUtil')
-const db = mongoUtil.connect();
-
 const Post = require('../models/posts');
+
+//Connect to database
+mongoose.connect('mongodb://localhost:27017/garhpals');
+
+mongoose.connection.on('connected', () => {
+    console.log('Connected to database ' + 'mongodb://localhost:27017/garhpals');
+});
+
+mongoose.connection.on('error', () => {
+    console.log('Database error ' + err);
+});
+/*
 
 app.get('/posts', (req, res) => {
     Post.find({}, 'content time', function (error, posts) {
@@ -92,7 +108,7 @@ app.use(session({
         mongooseConnection: db
     })
 }));
-
+*/
 // parse incoming requests
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

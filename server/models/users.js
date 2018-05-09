@@ -62,30 +62,10 @@ UsersSchema.statics.authenticate = function (email, password, callback) {
                 }
             })
         });
-}
-
-UsersSchema.pre('save', function(next){
-   let user = this;
-   bcrypt.hash(user.password, 10, function (err, hash){
-      if(err){
-          return next(err);
-      }
-      user.password = hash;
-      next();
-   });
-});
+};
 
 const Users = mongoose.model('Users', UsersSchema);
-module.exports = Users;
-
-module.exports.getUserById = function(id, callback){
-    Users.findById(id, callback);
-}
-
-module.exports.getUserByUsername = function(first_name, callback){
-    const query = {first_name: first_name}
-    Users.findOne(query, callback);
-}
+module.exports = Users
 
 module.exports.addUser = function(newUser, callback){
     bcrypt.genSalt(10, function(err, salt){
@@ -95,4 +75,4 @@ module.exports.addUser = function(newUser, callback){
             newUser.save(callback);
         });
     });
-}
+};
