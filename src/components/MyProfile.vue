@@ -1,4 +1,5 @@
 <template>
+  <div>
   <!--actual My Profile page-->
   <!--Contains the profile image, name, birthday, and status of the user logged in.-->
   <section>
@@ -273,6 +274,7 @@
       <!--end div container-->
     </div>
   </section>
+</div>
 </template>
 
 
